@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+@import url('header.css');
+@import url('home.css');
+@import url('content.css');
+@import url('testimonials.css');
+@import url('footer.css');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor_primaria1: #BFCFD9;
+    --cor_primaria2: #7698A6;
+    --cor_primaria3: #456173;
+    --cor_primaria4: #213440;
+    --cor_primaria5: #0A1926;
+
+    --font_title: "Source Code Pro", monospace;
+    --font_paragrafo: "M PLUS Code Latin", monospace;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #0A1926 93%, #213440);
+    margin: auto;
+}
+
+main {
+    padding: 30px 15px;
+    margin: auto;
+    max-width: 1024px;
+}
+
+.btn-default {
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--cor_primaria4);
+    color: var(--cor_primaria1);
+    opacity: .7;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn-default:hover {
+    opacity: 1;
+}
+
+h2 {
+    margin: 70px 0px;
+    font-family: var(--font_title);
+    font-size: 2.7rem;
+    color: var(--cor_primaria1);
+}
+
+.buy {
+    background-color: limegreen;
+}
+
+.hidden {
+    display: none;
+}

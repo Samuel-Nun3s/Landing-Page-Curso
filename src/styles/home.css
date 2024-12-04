@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@import url('style.css');
+
+#cta {
+    margin-top: 100px;
+}
+
+#cta h1,
+span {
+    font-size: 2.7rem;
+    word-wrap: break-word;
+    font-family: var(--font_title);
+    line-height: 1em;
+    color: var(--cor_primaria2);
+    text-align: center;
+}
+
+#cta h1 span {
+    color: var(--cor_primaria1);
+}
+
+#cta p {
+    margin-top: 20px;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: var(--font_paragrafo);
+    color: white;
+}
+
+#home_buttons {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#social_media {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.social_media_buttons {
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    font-size: 2em;
+    background-color: transparent;
+    color: var(--cor_primaria1);
+    opacity: .6;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.social_media_buttons:hover {
+    opacity: 1;
+}

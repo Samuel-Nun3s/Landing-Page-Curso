@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/style.css">
+    <script src="src/js/scripts.js" defer></script>
+    <title>Landing Page Curso</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="nav_header">
+                <i class="fa-solid fa-square-binary"> Programing</i>
+                
+                <button id="mobile_button" onclick="changeMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            
+            <menu id="nav_menu" class="hidden">
+                <ul id="nav_list">
+                    <li>
+                        <a href="#home">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#contents">Conteúdos</a>
+                    </li>
+                    <li>
+                        <a href="#testimonials">Avaliações</a>
+                    </li>
+                </ul>
+
+                <button id="buy_header" class="btn-default buy">Compre Já</button>
+            </menu>            
+        </nav>
+    </header>
+    <main id="content">
+        <section id="home">
+            <div id="shape"></div>
+            <div id="cta">
+                <h1>
+                    Curso completo de Programação <span>Full Stack</span>
+                </h1>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi minus unde voluptatem dignissimos natus optio iusto.
+                </p>
+                
+                <div id="home_buttons">
+                    <button class="btn-default">
+                        Ver conteúdos
+                    </button>
+                    <button class="btn-default buy">
+                        Comprar agora
+                    </button>
+                </div>
+
+                <div id="social_media">
+                    <a class="social_media_buttons">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://github.com/Samuel-Nun3s" target="_blank" class="social_media_buttons">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a class="social_media_buttons">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contents">
+            <h2>Conteúdos</h2>
+
+            <div id="matters">
+                <div class="matter">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3 class="matter_title">
+                        HTML5
+                    </h3>
+                
+                    <span class="matter_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, cum modi eum beatae necessitatibus maiores asperiores at perferendis earum nihil.
+                    </span>
+                </div>
+                <div class="matter">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3 class="matter_title">
+                        CSS3
+                    </h3>
+                
+                    <span class="matter_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, cum modi eum beatae necessitatibus maiores asperiores at perferendis earum nihil.
+                    </span>
+                </div>
+                <div class="matter">
+                    <i class="fa-brands fa-js"></i>
+                    <h3 class="matter_title">
+                        Javascript
+                    </h3>
+                
+                    <span class="matter_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, cum modi eum beatae necessitatibus maiores asperiores at perferendis earum nihil.
+                    </span>
+                </div>
+                <div class="matter">
+                    <i class="fa-brands fa-php"></i>
+                    <h3 class="matter_title">
+                        PHP
+                    </h3>
+                
+                    <span class="matter_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, cum modi eum beatae necessitatibus maiores asperiores at perferendis earum nihil.
+                    </span>
+                </div>
+                <div class="matter">
+                    <i class="fa-solid fa-database"></i>
+                    <h3 class="matter_title">
+                        MySql
+                    </h3>
+                
+                    <span class="matter_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, cum modi eum beatae necessitatibus maiores asperiores at perferendis earum nihil.
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>Avaliações</h2>
+
+            <div class="testimonial">
+                    <div class="user">
+                        <i class="fa-solid fa-user"></i>
+                        <h3>
+                            User 1
+                        </h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At tempore iste quibusdam qui reiciendis iure tempora minima quam 
+                </span>
+            </div>
+
+            <div class="testimonial">
+                <div class="user">
+                    <i class="fa-solid fa-user"></i>
+                    <h3>
+                        User 2
+                    </h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+            <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </span>
+        </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; Samuel Nunes
+        </p>
+
+        <div id="social_media">
+            <a class="social_media_buttons">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://github.com/Samuel-Nun3s" target="_blank" class="social_media_buttons">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a class="social_media_buttons">
+                <i class="fa-brands fa-telegram"></i>
+            </a>
+        </div>
+
+    </footer>
+</body>
+</html>
