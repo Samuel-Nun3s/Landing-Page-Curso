@@ -32,7 +32,7 @@
                     </li>
                 </ul>
 
-                <button id="buy_header" class="btn-default buy">Compre Já</button>
+                <button id="buy_header" class="btn-default buy" onclick="toggleModal()">Reservar Vaga</button>
             </menu>            
         </nav>
     </header>
@@ -51,8 +51,8 @@
                     <button class="btn-default">
                         Ver conteúdos
                     </button>
-                    <button class="btn-default buy">
-                        Comprar agora
+                    <button class="btn-default buy" onclick="toggleModal()">
+                        Reservar Vaga
                     </button>
                 </div>
 
@@ -170,7 +170,38 @@
             </span>
         </div>
         </section>
-    </main>
+
+        <!-- Modal -->
+        <div id="fade" class="hidden"></div>
+        <div id="modal" class="hidden">
+            <div class="modal-header">
+                <h2 class="modal-title">Reservar Vaga</h2>
+            </div>
+            
+            <div class="modal-body">
+                <form>
+                    <div class="form-group" id="div-name">
+                        <label for="name" class="label-form">Nome:</label>
+                        <input type="text" name="name" id="name" class="input-form" placeholder="Nome" oninput="verificationName()">
+                        <span class="span-modal hidden">O nome deve ter no minimo 2 letras.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="label-form">Email:</label>
+                        <input type="text" name="email" id="email" class="input-form" placeholder="Email" oninput="verificationEmail()">
+                        <span class="span-modal hidden">Insira um email válido.</span>
+                        <input type="text" name="email" id="confirm-email" class="input-form" placeholder="Confirme seu email" oninput="verificationConfirmEmail()">
+                        <span class="span-modal hidden">Os dois emails devem ser iguais!</span>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn-default" id="close-modal" onclick="toggleModal()">Cancelar</button>
+                <button class="btn-default buy">Reservar</button>
+            </div>
+        </div>
+    </main> 
     <footer>
         <p>
             &copy; Samuel Nunes
