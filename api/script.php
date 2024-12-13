@@ -1,7 +1,7 @@
 <?php
-    require_once('mailer/PHPMailer.php');
-    require_once('mailer/SMTP.php');
-    require_once('mailer/Exception.php');
+    require_once('PHPMailer.php');
+    require_once('SMTP.php');
+    require_once('Exception.php');
 
     $data = json_decode(file_get_contents("php://input"));
 
@@ -29,14 +29,14 @@
         $mail->Subject = 'Vaga Reservada com Sucesso no Curso de Programação Full Stack!';
         $mail->Body = "<p>Olá $name,</p>
             <br>
-            <p>Parabéns! Sua vaga no Curso Completo de <strong>Programação Full Stack</strong> foi reservada com sucesso! Estamos muito felizes em tê-lo(a) a bordo nesta jornada de aprendizado e desenvolvimento.</p>
+            <p>Parabéns! Sua vaga no Curso Completo de <strong>Programacão Full Stack</strong> foi reservada com sucesso! Estamos muito felizes em tê-lo(a) a bordo nesta jornada de aprendizado e desenvolvimento.</p>
             <br>
             <p>Detalhes do Curso:<br>
             📚 Curso: Programação Full Stack<br>
             📅 Início das Aulas: 30/02/2035";
         $mail->AltBody = 'Olá $name,
 
-            Parabéns! Sua vaga no Curso Completo de Programação Full Stack foi reservada com sucesso! Estamos muito felizes em tê-lo(a) a bordo nesta jornada de aprendizado e desenvolvimento.
+            Parabéns! Sua vaga no Curso Completo de Programacão Full Stack foi reservada com sucesso! Estamos muito felizes em tê-lo(a) a bordo nesta jornada de aprendizado e desenvolvimento.
 
             Detalhes do Curso:
             📚 Curso: Programação Full Stack

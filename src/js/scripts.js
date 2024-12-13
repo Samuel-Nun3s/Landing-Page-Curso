@@ -79,7 +79,7 @@ function ReservePlace() {
 // Conectando com backend para o envio do email;
 async function SendEmail(UserObj) {
     try {
-        const response = await fetch('src/php/script.php', {
+        const response = await fetch('./api/script.php', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(UserObj)
