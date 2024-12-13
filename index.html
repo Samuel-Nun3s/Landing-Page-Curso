@@ -179,7 +179,7 @@
             </div>
             
             <div class="modal-body">
-                <form>
+                <form action="src/php/script.php" method="GET">
                     <div class="form-group" id="div-name">
                         <label for="name" class="label-form">Nome:</label>
                         <input type="text" name="name" id="name" class="input-form" placeholder="Nome" oninput="verificationName()">
@@ -198,7 +198,7 @@
 
             <div class="modal-footer">
                 <button class="btn-default" id="close-modal" onclick="toggleModal()">Cancelar</button>
-                <button class="btn-default buy">Reservar</button>
+                <button class="btn-default buy" onclick="ReservePlace()">Reservar</button>
             </div>
         </div>
     </main> 
