@@ -6,7 +6,7 @@ Esta é uma landing page simples para "promover" um **curso completo de programa
 ---
 
 ## Demonstração
-Link para Demonstração
+Link do site: https://landing-curso.vercel.app/
 
 <img src="src/images/landing-home.png" alt="Home do site">
 <img src="src/images/landing-modal.png" alt="Modal com formulario">
